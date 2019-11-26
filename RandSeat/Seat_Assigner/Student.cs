@@ -12,4 +12,16 @@ namespace Seat_Assigner
         public string lName {get; set;}
         public int id       {get; set;}
     }
+
+
+    class Selection
+    {
+        public string fName { get; set; }
+        public string lName { get; set; }
+
+        public override string ToString()
+        {
+            return $"{fName} {lName}: row {row_num} computer {comp_num}.";
+        }
+    }
 }
