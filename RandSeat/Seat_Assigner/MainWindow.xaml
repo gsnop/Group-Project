@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="BTNgen_rand" Content="Get Seats" HorizontalAlignment="Left" Margin="65,88,0,0" VerticalAlignment="Top" Width="156" Height="42"/>
-        <ListBox x:Name="LBoutput" HorizontalAlignment="Left" Height="342" Margin="355,40,0,0" VerticalAlignment="Top" Width="342"/>
+        <ListBox x:Name="LBoutput" HorizontalAlignment="Left" Height="165" Margin="386,88,0,0" VerticalAlignment="Top" Width="342"/>
+        <ComboBox x:Name="CBname" HorizontalAlignment="Left" Margin="103,92,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label x:Name="LBLname" Content="Name" HorizontalAlignment="Left" Margin="56,88,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
