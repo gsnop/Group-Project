@@ -16,16 +16,16 @@ namespace Seat_Assigner
 
 
 
-    class Selection
-    {
-        public int comp_num { get; set; }
-        public int row_num { get; set; }
+    //class Selection
+    //{
+    //    public int comp_num { get; set; }
+    //    public int row_num { get; set; }
 
-        public override string ToString()
-        {
-            return $"{fname} {}"
-        }
-    }
+    //    public override string ToString()
+    //    {
+    //        return $"{fname} {}"
+    //    }
+    //}
 
 
 }
