@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="BTNgen_rand" Content="Get Seats" HorizontalAlignment="Left" Margin="65,88,0,0" VerticalAlignment="Top" Width="156" Height="42"/>
+        <ListBox HorizontalAlignment="Left" Height="342" Margin="355,40,0,0" VerticalAlignment="Top" Width="342"/>
 
     </Grid>
 </Window>
