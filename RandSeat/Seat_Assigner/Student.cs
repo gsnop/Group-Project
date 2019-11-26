@@ -8,5 +8,8 @@ namespace Seat_Assigner
 {
     class Student
     {
+        public string fName {get; set;}
+        public string lName {get; set;}
+        public int id   { get; set; }
     }
 }
