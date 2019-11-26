@@ -23,5 +23,7 @@ namespace RandomSeatAssigner
         {
             return input?.ToUpper();
         }
+
+        //Test
     }
 }
