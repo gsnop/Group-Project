@@ -29,4 +29,11 @@ namespace RandomSeatAssigner
             return input?.ToUpper();
         }
     }
+
+    private static HttpClient httpClient;
+
+    public Function()
+    {
+        httpClient = new HttpClient;
+    }
 }
