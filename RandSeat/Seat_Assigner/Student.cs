@@ -10,6 +10,6 @@ namespace Seat_Assigner
     {
         public string fName {get; set;}
         public string lName {get; set;}
-        public int id   { get; set; }
+        public int id       {get; set;}
     }
 }
