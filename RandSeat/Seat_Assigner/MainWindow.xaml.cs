@@ -28,28 +28,23 @@ namespace Seat_Assigner
 
         private void CBname_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            LBoutput.Items.Add(CBname.SelectedItem);
         }
 
         private void BTNName_Click(object sender, RoutedEventArgs e)
         {
             string[] lines = File.ReadAllLines("StudentNames.txt");
 
-            List<Student> students = new List<Student>();
-
-            for (int i = 1; i < lines.Length; i++)
-            {
-                var line = lines[i];
-                Student temp = new Student();
-                var parts = line.Split(':');
-                temp.fName = parts[0];
-                temp.lName = parts[1];
-
-                foreach (var part in parts)
+                foreach (var line in lines)
                 {
-                    CBname.Items.Add(parts[0] + " " + parts[1]);
+                    string[] l = line.Split(':');
+                    CBname.Items.Add(l[0] + " " + l[1]);
                 }
-            }
+        }
+
+        private void LBoutput_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }
