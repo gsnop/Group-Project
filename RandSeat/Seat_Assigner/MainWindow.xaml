@@ -8,8 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ListBox x:Name="LBoutput" HorizontalAlignment="Left" Height="165" Margin="386,88,0,0" VerticalAlignment="Top" Width="342"/>
-        <ComboBox x:Name="CBname" HorizontalAlignment="Left" Margin="103,92,0,0" VerticalAlignment="Top" Width="168"/>
+        <ComboBox x:Name="CBname" HorizontalAlignment="Left" Margin="103,92,0,0" VerticalAlignment="Top" Width="256" SelectionChanged="CBname_SelectionChanged"/>
         <Label x:Name="LBLname" Content="Name" HorizontalAlignment="Left" Margin="56,88,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BTNName" Content="Read" HorizontalAlignment="Left" Margin="122,190,0,0" VerticalAlignment="Top" Width="124" Height="40" Click="BTNName_Click"/>
 
     </Grid>
 </Window>
