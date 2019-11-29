@@ -21,7 +21,7 @@ namespace Seat_Assigner
         public int row_num { get; set; }
     }
 
-
+    
     class Selection
     {
         public string fName { get; set; }
