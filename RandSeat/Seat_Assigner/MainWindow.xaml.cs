@@ -44,7 +44,7 @@ namespace Seat_Assigner
 
         private void LBoutput_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            LBoutput.Items.Add($"{fName[selectIndex]}");
         }
     }
 }

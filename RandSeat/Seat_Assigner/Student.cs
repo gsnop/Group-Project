@@ -11,6 +11,8 @@ namespace Seat_Assigner
         public string fName {get; set;}
         public string lName {get; set;}
         public int id       {get; set;}
+
+        public List<Student> students { get; set; }
     }
 
     class Workstation
@@ -31,5 +33,10 @@ namespace Seat_Assigner
         {
             return $"{fName} {lName}: row {row_num} computer {comp_num}.";
         }
+
+        //private void Selection()
+        //{
+
+        //}
     }
 }
