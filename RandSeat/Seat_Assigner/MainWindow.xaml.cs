@@ -46,7 +46,7 @@ namespace Seat_Assigner
             int nums = rand.Next(1, 50);
             txtNumbers.Text = nums.ToString();
         }
-        
+
         //Returns number less than 50 
         //int num = random.Next(50);
         public int RandomNumber(int min, int max)
@@ -54,6 +54,15 @@ namespace Seat_Assigner
             Random rand = new Random();
             return random.Next(min, max);
         }
+
+        int randomNumber;
+        Random rand = new Random();
+        randomNumber = rand.Next();
+        Console.WriteLine("The random number is " + randomNumber)
+            for(int i; int <= 50; int ++)
+            {
+                
+            }
 
         //public class RandomGenerator
         //{
@@ -68,6 +77,11 @@ namespace Seat_Assigner
         private void LBoutput_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             LBoutput.Items.Add($"lName", "fName", "id");
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
