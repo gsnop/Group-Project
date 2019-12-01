@@ -35,30 +35,30 @@ namespace Seat_Assigner
         {
             string[] lines = File.ReadAllLines("StudentNames.txt");
 
-                foreach (var line in lines)
-                {
-                    string[] l = line.Split(':');
-                    CBname.Items.Add(l[0] + " " + l[1]);
-                }
-                //Returns number less than 50 
-                //int num = random.Next(50);
-            public int RandomNumber(int min, int max)
+            foreach (var line in lines)
             {
-                Random rand = new Random();
-                return random.Next(min, max);
+                string[] l = line.Split(':');
+                CBname.Items.Add(l[0] + " " + l[1]);
             }
+        }
 
-            //public class RandomGenerator
-            //{
-            ////Generate a random number between two numbers
-            //    public int RandomNumber(int min, int max)
-            //    {
-            //        Random rand = new Random();
-            //        return random.Next(min, max);
-            //    }
-            //}
+        //Returns number less than 50 
+        //int num = random.Next(50);
+        public int RandomNumber(int min, int max)
+        {
+            Random rand = new Random();
+            return random.Next(min, max);
+        }
 
-    }
+        //public class RandomGenerator
+        //{
+        ////Generate a random number between two numbers
+        //    public int RandomNumber(int min, int max)
+        //    {
+        //        Random rand = new Random();
+        //        return random.Next(min, max);
+        //    }
+        //}
 
         private void LBoutput_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
