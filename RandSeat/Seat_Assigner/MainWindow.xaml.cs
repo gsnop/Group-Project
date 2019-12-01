@@ -55,15 +55,15 @@ namespace Seat_Assigner
             return random.Next(min, max);
         }
 
-        int randomNumber;
-        Random rand = new Random();
-        randomNumber = rand.Next();
-        Console.WriteLine("The random number is " + randomNumber)
-            for(int i; int <= 50; int ++)
-            {
+        //int randomNumber;
+        //Random rand = new Random();
+        //randomNumber = rand.Next();
+        //Console.WriteLine("The random number is " + randomNumber)
+        //    for(int i; int <= 50; int ++)
+        //    {
                 
-            }
-
+        //    }
+        //    string text = System.IO.File.ReadAllText()
         //public class RandomGenerator
         //{
         ////Generate a random number between two numbers
@@ -79,9 +79,9 @@ namespace Seat_Assigner
             LBoutput.Items.Add($"lName", "fName", "id");
         }
 
-        private void BtnClose_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
+        //private void BtnClose_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Close();
+        //}
     }
 }
