@@ -50,6 +50,7 @@ namespace Seat_Assigner
             return random.Next(min, max);
         }
 
+        public int RandomNumber()
         //public class RandomGenerator
         //{
         ////Generate a random number between two numbers
