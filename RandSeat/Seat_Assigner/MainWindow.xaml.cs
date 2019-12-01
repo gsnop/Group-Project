@@ -40,6 +40,11 @@ namespace Seat_Assigner
                 string[] l = line.Split(':');
                 CBname.Items.Add(l[0] + " " + l[1]);
             }
+
+            //Generate a number between 1 and 50
+            Random rand = new Random();
+            int nums = rand.Next(1, 50);
+            txtNumbers.Text = nums.ToString();
         }
 
         //Returns number less than 50 
@@ -50,7 +55,15 @@ namespace Seat_Assigner
             return random.Next(min, max);
         }
 
-        public int RandomNumber()
+        int randomNumber;
+        Random rand = new Random();
+        randomNumber = rand.Next();
+        Console.WriteLine("The random number is " + randomNumber)
+            for(int i; int <= 50; int ++)
+            {
+                
+            }
+
         //public class RandomGenerator
         //{
         ////Generate a random number between two numbers
@@ -64,6 +77,11 @@ namespace Seat_Assigner
         private void LBoutput_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             LBoutput.Items.Add($"lName", "fName", "id");
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
