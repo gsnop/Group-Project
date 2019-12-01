@@ -46,7 +46,7 @@ namespace Seat_Assigner
             int nums = rand.Next(1, 50);
             txtNumbers.Text = nums.ToString();
         }
-
+        
         //Returns number less than 50 
         //int num = random.Next(50);
         public int RandomNumber(int min, int max)
