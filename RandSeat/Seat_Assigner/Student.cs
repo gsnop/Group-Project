@@ -8,17 +8,29 @@ namespace Seat_Assigner
 {
     class Student
     {
-        public string fName {get; set;}
-        public string lName {get; set;}
-        public int id       {get; set;}
+        public string fName { get; set; }
+        public string lName { get; set; }
+        public int id { get; set; }
 
+        public Student()
+        {
+            fName = string.Empty;
+            lName = string.Empty;
+        }
         public List<Student> students { get; set; }
     }
+
 
     class Workstation
     {
         public int comp_num { get; set; }
-        public int row_num { get; set; }
+        
+
+        public Workstation()
+        {
+            comp_num = 0;
+        }
+
     }
 
     
@@ -31,12 +43,7 @@ namespace Seat_Assigner
 
         public override string ToString()
         {
-            return $"{fName} {lName}: row {row_num} computer {comp_num}.";
+            return $"{fName} {lName}: Computer {comp_num}.";
         }
-
-        //private void Selection()
-        //{
-
-        //}
     }
 }
