@@ -40,13 +40,15 @@ namespace Seat_Assigner
                 string[] l = line.Split(':');
                 CBname.Items.Add(l[0] + " " + l[1]);
             }
-
+            
             //Generate a number between 1 and 50
             Random rand = new Random();
             int nums = rand.Next(1, 50);
             txtNumbers.Text = nums.ToString();
+
+
         }
-        
+        /*
         //Returns number less than 50 
         //int num = random.Next(50);
         public int RandomNumber(int min, int max)
@@ -83,5 +85,6 @@ namespace Seat_Assigner
         {
             Close();
         }
+        */
     }
 }
